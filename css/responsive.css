@@ -1,0 +1,662 @@
+/* ==========================================================================
+   LegalEase - Responsive Breakpoint Rules (css/responsive.css)
+   Breakpoints: 1440px, 1280px, 1024px, 768px, 576px, 430px, 390px, 360px
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Large Desktop (1440px - 1920px+)
+   -------------------------------------------------------------------------- */
+@media (min-width: 1440px) {
+  .hero-headline {
+    font-size: 3.75rem;
+  }
+
+  .statue-img {
+    max-height: 620px;
+  }
+
+  .stat-number {
+    font-size: 2.5rem;
+  }
+
+  .cta-headline {
+    font-size: 3rem;
+  }
+
+  .cta-visual-container {
+    width: 360px;
+    min-height: 340px;
+  }
+
+  .cta-scale-img {
+    max-width: 350px;
+    max-height: 350px;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   2. Standard Desktop / Laptop (1200px - 1439px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1399.98px) {
+  .hero-main-card {
+    padding: 3rem 2.25rem 2.25rem;
+  }
+
+  .hero-headline {
+    font-size: 3.1rem;
+  }
+
+  .statue-img {
+    max-height: 520px;
+  }
+
+  .stat-number {
+    font-size: 2rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   3. Small Laptop / Large Tablet (992px - 1199.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .brand-logo {
+    height: 44px;
+  }
+
+  /* Responsive Collapsible Navbar for < 1200px */
+  .navbar-collapse {
+    background-color: var(--bg-card);
+    border: 1px solid var(--border-color);
+    border-radius: var(--radius-md);
+    padding: 1.25rem 1.25rem;
+    margin-top: 0.75rem;
+    box-shadow: var(--shadow-lg);
+  }
+
+  .nav-menu {
+    flex-direction: column;
+    align-items: stretch !important;
+    gap: 0.25rem;
+    width: 100%;
+  }
+
+  .nav-menu .nav-item {
+    width: 100%;
+  }
+
+  .nav-menu .nav-link {
+    width: 100%;
+    padding: 0.65rem 1rem !important;
+    justify-content: flex-start;
+    border-radius: var(--radius-sm);
+  }
+
+  .nav-menu .nav-link-stacked {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-block: 0.65rem !important;
+  }
+
+  .nav-menu .nav-link.active::after {
+    display: none;
+  }
+
+  .nav-menu .nav-link.active {
+    background-color: rgba(169, 135, 67, 0.1);
+    color: var(--primary-gold);
+  }
+
+  .mobile-nav-footer {
+    border-top: 1px solid var(--border-color-subtle);
+  }
+
+  .hero-main-card {
+    padding: 2.5rem 1.75rem 2rem;
+  }
+
+  .hero-headline {
+    font-size: 2.65rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .hero-subheading {
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .statue-img {
+    max-height: 440px;
+  }
+
+  .stat-number {
+    font-size: 1.75rem;
+  }
+
+  .about-img {
+    height: 420px;
+  }
+
+  .timeline-step-col {
+    padding-inline: 0.5rem;
+  }
+
+  .timeline-node {
+    width: 72px;
+    height: 72px;
+  }
+
+  .step-number-tag {
+    font-size: 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   4. Medium Tablet Landscape & Portrait (768px - 991.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .brand-logo {
+    height: 46px;
+  }
+
+  .brand-logo-footer {
+    height: 64px;
+  }
+
+  .section-spacing {
+    padding-block: 4.5rem;
+  }
+
+  .hero-wrapper {
+    padding-top: 6rem;
+    padding-bottom: 3.5rem;
+  }
+
+  .hero-main-card {
+    padding: 2.25rem 1.75rem;
+    border-radius: var(--radius-lg);
+  }
+
+  /* Two column composition for hero on tablet */
+  .hero-left-content {
+    margin-bottom: 2rem;
+  }
+
+  .hero-headline {
+    font-size: 2.35rem;
+  }
+
+  .hero-statue-col {
+    min-height: auto;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .statue-img {
+    max-height: 400px;
+  }
+
+  /* Overlapping Quote Panel on Tablet */
+  .overlapping-quote-panel {
+    bottom: -15px;
+    inset-inline-start: 15px;
+    inset-inline-end: 15px;
+    padding: 1.25rem 1.4rem;
+  }
+
+  /* About section stacked */
+  .about-img-col {
+    margin-bottom: 3rem;
+  }
+
+  .about-img {
+    height: 380px;
+  }
+
+  /* Testimonials grid: 2 columns on tablet */
+  .testimonial-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1.25rem;
+  }
+
+  /* CTA tablet adjustments */
+  .cta-banner-card {
+    padding: 3rem 2.25rem;
+  }
+
+  .cta-headline {
+    font-size: 2.2rem;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-secondary {
+    height: 50px;
+  }
+
+  .cta-right-col {
+    margin-top: 1.5rem;
+  }
+
+  .cta-visual-container {
+    width: 290px;
+    min-height: 280px;
+  }
+
+  .cta-scale-img {
+    max-width: 280px;
+    max-height: 280px;
+  }
+
+  /* Footer */
+  .site-footer {
+    padding-top: 3.5rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   5. Small Tablet & Large Phone (576px - 767.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  .brand-logo {
+    height: 42px;
+  }
+
+  .brand-logo-footer {
+    height: 58px;
+  }
+
+  .section-spacing {
+    padding-block: 3.75rem;
+  }
+
+  .section-spacing-lg {
+    padding-block: 4.5rem;
+  }
+
+  .hero-wrapper {
+    padding-top: 5.5rem;
+    padding-bottom: 2.5rem;
+  }
+
+  .hero-main-card {
+    padding: 1.75rem 1.25rem;
+    border-radius: var(--radius-md);
+  }
+
+  .hero-headline {
+    font-size: 2.1rem;
+  }
+
+  .hero-subheading {
+    font-size: 0.9375rem;
+  }
+
+  .hero-cta-group {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.75rem;
+    margin-bottom: 2rem;
+  }
+
+  .hero-cta-group .btn-primary-custom,
+  .hero-cta-group .btn-secondary-custom {
+    width: 100%;
+  }
+
+  .hero-statue-col {
+    min-height: auto;
+    margin-block: 1rem;
+  }
+
+  .statue-img {
+    max-height: 340px;
+  }
+
+  .about-floating-badge {
+    bottom: 1rem;
+    inset-inline-start: 1rem;
+    padding: 0.85rem 1rem;
+  }
+
+  /* Overlapping Quote Panel moves below photo on mobile to preserve photo visibility */
+  .overlapping-quote-panel {
+    position: relative;
+    bottom: auto;
+    inset-inline-start: auto;
+    inset-inline-end: auto;
+    margin-top: 1rem;
+    padding: 1.25rem 1.4rem;
+  }
+
+  /* Scale down geometric squares on mobile */
+  .geo-square-lg {
+    width: 48px;
+    height: 48px;
+  }
+
+  .geo-square-md {
+    width: 36px;
+    height: 36px;
+  }
+
+  /* Timeline on small screens */
+  .how-it-works-timeline {
+    padding-inline-start: 0;
+    gap: 1.25rem;
+  }
+
+  .how-it-works-timeline::before {
+    display: none;
+  }
+
+  .badge-icon-box {
+    width: 38px;
+    height: 38px;
+  }
+
+  .about-badge-number {
+    font-size: 1.2rem;
+  }
+
+  .cta-banner-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: var(--radius-lg);
+  }
+
+  .cta-right-col {
+    margin-top: 2rem;
+  }
+
+  .cta-visual-container {
+    width: 250px;
+    min-height: 240px;
+  }
+
+  .cta-scale-img {
+    max-width: 240px;
+    max-height: 240px;
+  }
+
+  .cta-headline {
+    font-size: 1.85rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .cta-actions .btn {
+    width: 100%;
+  }
+
+  /* Testimonials grid: single column on small screens */
+  .testimonial-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
+
+  /* CTA mobile: stack vertically, full-width buttons */
+  .cta-headline {
+    font-size: 1.75rem;
+  }
+
+  .cta-desc {
+    font-size: 0.95rem;
+    margin-bottom: 1.75rem;
+  }
+
+  .cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0.85rem;
+  }
+
+  .cta-btn-primary,
+  .cta-btn-secondary {
+    width: 100%;
+    justify-content: center;
+    height: 52px;
+  }
+
+  .cta-geo-left,
+  .cta-geo-right {
+    opacity: 0.3;
+  }
+
+  .footer-bottom-bar {
+    flex-direction: column;
+    text-align: center;
+    gap: 1.25rem;
+  }
+
+  .footer-legal-links {
+    justify-content: center;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   6. Mobile Devices (390px - 575.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 575.98px) {
+  .brand-logo {
+    height: 38px;
+  }
+
+  .brand-title {
+    font-size: 1.15rem;
+  }
+
+  .brand-tagline {
+    display: none;
+  }
+
+  .nav-control-btn {
+    width: 36px;
+    height: 36px;
+  }
+
+  .nav-control-btn.dir-btn {
+    min-width: 48px;
+    height: 36px;
+    padding-inline: 0.65rem;
+  }
+
+  .container-custom {
+    padding-inline: 1rem;
+  }
+
+  .hero-main-card {
+    padding: 1.5rem 1rem;
+    border-radius: 16px;
+  }
+
+  .hero-headline {
+    font-size: 1.85rem;
+    line-height: 1.2;
+  }
+
+  .hero-subheading {
+    font-size: 0.9rem;
+  }
+
+  .partner-logo-list {
+    gap: 1rem;
+    justify-content: space-between;
+  }
+
+  .partner-logo-item {
+    font-size: 0.85rem;
+  }
+
+  .hero-statue-col {
+    min-height: auto;
+  }
+
+  .statue-img {
+    max-height: 290px;
+  }
+
+  .benefit-grid-2x2 {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .service-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .service-icon-box {
+    width: 52px;
+    height: 52px;
+  }
+
+  .service-title {
+    font-size: 1.2rem;
+  }
+
+  .section-header-center {
+    margin-bottom: 2.5rem;
+  }
+
+  .section-header-center h2 {
+    font-size: 1.75rem;
+  }
+
+  .timeline-node {
+    width: 64px;
+    height: 64px;
+  }
+
+  .step-number-tag {
+    font-size: 1.15rem;
+  }
+
+  .tcard {
+    padding: 1.5rem 1.25rem;
+  }
+
+  /* CTA small screen */
+  .cta-banner-card {
+    padding: 2rem 1.25rem;
+  }
+
+  .cta-headline {
+    font-size: 1.6rem;
+  }
+
+  .cta-chip-top,
+  .cta-chip-bottom {
+    display: none;
+  }
+
+  .testimonial-card {
+    padding: 1.75rem 1.25rem;
+  }
+
+  .custom-accordion .accordion-button {
+    font-size: 0.95rem;
+    padding: 1rem 1.25rem;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   7. Compact Mobile (360px - 389.98px)
+   -------------------------------------------------------------------------- */
+@media (max-width: 389.98px) {
+  .brand-logo {
+    height: 34px;
+  }
+
+  .brand-title {
+    font-size: 1.1rem;
+  }
+
+  .brand-tagline {
+    display: none;
+  }
+
+  .nav-control-btn {
+    width: 34px;
+    height: 34px;
+  }
+
+  .nav-control-btn.dir-btn {
+    min-width: 44px;
+    height: 34px;
+    padding-inline: 0.5rem;
+  }
+
+  .custom-toggler {
+    padding: 0.25rem;
+  }
+
+  .hero-headline {
+    font-size: 1.65rem;
+  }
+
+  .eyebrow-badge {
+    font-size: 0.7rem;
+    padding: 0.3rem 0.75rem;
+  }
+
+  .cta-headline {
+    font-size: 1.6rem;
+  }
+
+  .btn-primary-custom,
+  .btn-secondary-custom {
+    padding-inline: 1.25rem;
+    font-size: 0.875rem;
+  }
+}
+
+
+/* --------------------------------------------------------------------------
+   8. Geo Square Scale-Down (all mobile screens)
+   -------------------------------------------------------------------------- */
+@media (max-width: 767.98px) {
+  /* Scale down large and xl squares to prevent overflow */
+  .geo-square-xl { width: 72px;  height: 72px; }
+  .geo-square-lg { width: 50px;  height: 50px; }
+  .geo-square-md { width: 36px;  height: 36px; }
+
+  /* Reduce cluster opacity on small screens for clean look */
+  .cta-geo-left,
+  .cta-geo-right {
+    opacity: 0.25;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .geo-square-xl { width: 52px;  height: 52px; }
+  .geo-square-lg { width: 38px;  height: 38px; }
+  .geo-square-md { width: 28px;  height: 28px; }
+  .geo-square-sm { width: 20px;  height: 20px; }
+
+  /* Hide overly decorative clusters on very small screens */
+  .cta-geo-left,
+  .cta-geo-right {
+    display: none;
+  }
+}
+
+/* --------------------------------------------------------------------------
+   9. Global overflow safeguard
+   -------------------------------------------------------------------------- */
+@media (max-width: 991.98px) {
+  .geo-decoration-group {
+    overflow: hidden;
+  }
+
+  /* Clip any cluster squares that drift outside the wrapper */
+  .editorial-image-wrapper {
+    overflow: hidden;
+  }
+
+  .editorial-image-wrapper .geo-decoration-group {
+    overflow: visible; /* squares are intentionally outside; clip via section */
+  }
+}

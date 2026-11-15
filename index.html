@@ -1,0 +1,1138 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr" data-theme="light" data-bs-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>LegalEase – Modern Legal Documentation &amp; Consultation Services</title>
+  <meta name="description"
+    content="Navigate your legal documentation needs with clarity and confidence. Professional document assistance, rental agreements, affidavits, and business registration support.">
+  <meta name="keywords"
+    content="legal documentation, rental agreement, affidavits, business registration, legal notices, property documentation">
+
+  <!-- Favicon & Brand Icons -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+  <link rel="icon" type="image/png" href="assets/icons/icon.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192x192.png">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/components/cta.css">
+  <!-- Reusable Shared Footer Styles -->
+  <link rel="stylesheet" href="css/components/footer.css">
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Reusable Navigation Bar Placeholder (Injected via js/navbar.js) -->
+  <header id="main-navbar-container"></header>
+
+  <!-- =========================================================================
+       SECTION 1: HERO SECTION – Cinematic Two-Column Layout
+       ========================================================================= -->
+
+  <!-- Cinematic Fullscreen Backdrop (Stage 1 Dark Navy Background) -->
+  <div class="hero-cinematic-backdrop" id="heroCinematicBackdrop" aria-hidden="true"></div>
+
+  <section class="hero-wrapper" id="hero">
+    <div class="hero-diagonal-overlay"></div>
+    <div class="container container-custom">
+      <!-- Main Floating Off-White Container -->
+      <div class="hero-main-card">
+        <div class="row align-items-center g-4 g-xl-5">
+
+          <!-- LEFT: Text Content (Staggered continuous reveal during image flight) -->
+          <div class="col-lg-6 col-xl-7 hero-left-content" id="heroTextContent">
+            <div class="eyebrow-badge hero-reveal-item" id="heroEyebrow">
+              <span class="pulse-dot"></span>
+              <span>Trusted Legal Documentation</span>
+            </div>
+
+            <h1 class="hero-headline hero-reveal-item" id="heroHeadline">
+              Legal Clarity.<br>
+              Simplified Documents.<br>
+              <span class="headline-gold">Confidence in Every Step.</span>
+            </h1>
+
+            <p class="hero-subheading hero-reveal-item" id="heroSubheading">
+              Navigate your legal documentation needs with clarity and confidence. LegalEase makes document assistance
+              and consultation services more accessible, simple and convenient.
+            </p>
+
+            <div class="hero-cta-group hero-reveal-item" id="heroCtaGroup">
+              <a href="#consultationModal" class="btn btn-primary-custom" data-bs-toggle="modal"
+                data-bs-target="#consultationModal">
+                <span>Book a Consultation</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                  stroke-linecap="round" stroke-linejoin="round" class="cta-arrow">
+                  <line x1="5" y1="12" x2="19" y2="12"></line>
+                  <polyline points="12 5 19 12 12 19"></polyline>
+                </svg>
+              </a>
+              <a href="#services" class="btn btn-secondary-custom">
+                <span>Explore Services</span>
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M7 17l9.2-9.2M17 17V7H7"></path>
+                </svg>
+              </a>
+            </div>
+
+            <!-- Partner Logo Bar -->
+            <div class="hero-partners hero-reveal-item" id="heroPartners">
+              <div class="hero-partners-label">Institutional &amp; Verification Partners</div>
+              <div class="partner-logo-list">
+                <div class="partner-logo-item" title="FactFix Verification">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <polygon points="12 2 2 7 12 12 22 7 12 2"></polygon>
+                    <polyline points="2 17 12 22 22 17"></polyline>
+                    <polyline points="2 12 12 17 22 12"></polyline>
+                  </svg>
+                  <span>FactFix</span>
+                </div>
+                <div class="partner-logo-item" title="Probiz Enterprise">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                    <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                  </svg>
+                  <span>Pr&#243;biz</span>
+                </div>
+                <div class="partner-logo-item" title="MeetHub Collaborative">
+                  <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                  <span>MeetHub</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- RIGHT: Lady Justice Image – Continuous Single Element Transition -->
+          <div class="col-lg-6 col-xl-5 hero-statue-col" id="heroStatueCol">
+            <div class="statue-container">
+              <!-- Geometric cluster accents (revealed after arrival) -->
+              <div class="geo-decoration-group hero-geo-reveal" id="heroStatueGeo">
+                <span class="geo-square geo-square-gold geo-square-sm" style="top:-16px;right:20px;"></span>
+                <span class="geo-square geo-square-outline geo-square-md" style="top:40px;right:-20px;"></span>
+                <span class="geo-square geo-square-bronze geo-square-xs" style="top:10px;right:56px;opacity:0.6;"></span>
+                <span class="geo-square geo-square-light geo-square-sm" style="bottom:60px;left:-14px;"></span>
+                <span class="geo-square geo-square-outline geo-square-sm" style="bottom:-16px;right:50px;"></span>
+              </div>
+              <!-- Dedicated Single-Element Motion Wrap -->
+              <div class="statue-motion-wrap" id="statueMotionWrap">
+                <img src="assets/images/lady-justice-statue.png"
+                     alt="Lady Justice bronze statue with scales and sword"
+                     class="statue-img" id="heroStatueImg"
+                     width="420" height="580" loading="eager">
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 2: ABOUT / INTRODUCTION (Asymmetric with Floating Geometric Squares)
+       ========================================================================= -->
+  <section class="about-section section-spacing" id="about">
+    <div class="container container-custom">
+      <div class="row align-items-center g-5">
+        <!-- Visual Column with Floating Geometric Squares -->
+        <div class="col-lg-6 about-img-col reveal-on-scroll">
+          <div class="editorial-image-wrapper">
+            <!-- Floating Geometric Square Decorations – COMPOSITION 1: Corner Cluster -->
+            <div class="geo-decoration-group">
+              <!-- Primary gold corner anchor -->
+              <span class="geo-square geo-square-gold geo-square-md" style="top: -20px; left: -20px;"></span>
+              <!-- Two smaller bronze squares staggered -->
+              <span class="geo-square geo-square-bronze geo-square-sm"
+                style="top: 28px; left: 18px; opacity: 0.72;"></span>
+              <span class="geo-square geo-square-bronze geo-square-xs"
+                style="top: -8px; left: 46px; opacity: 0.55;"></span>
+              <!-- Right-side large outlined depth square -->
+              <span class="geo-square geo-square-outline geo-square-lg" style="bottom: -24px; right: -24px;"></span>
+              <!-- Navy accent bottom-right -->
+              <span class="geo-square geo-square-navy geo-square-sm"
+                style="bottom: 30px; right: 8px; opacity: 0.45;"></span>
+              <!-- Off-white floating left -->
+              <span class="geo-square geo-square-light geo-square-xs" style="bottom: 58px; left: -12px;"></span>
+            </div>
+
+            <img src="assets/images/about-legal-document.jpg"
+              alt="Official legal contract document with fountain pen and balance scale" class="editorial-img"
+              width="600" height="480" loading="lazy">
+
+            <div class="about-floating-badge">
+              <div class="badge-icon-box">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <div class="about-badge-text">
+                <span class="about-badge-number">100%</span>
+                <span class="about-badge-label">Procedural Confidentiality</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Content Column -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>About LegalEase</span>
+          </div>
+
+          <h2 class="display-6 font-serif mb-4">
+            Making Legal Documentation Simpler for Everyone
+          </h2>
+
+          <p class="lead text-body mb-4">
+            LegalEase bridges the gap between intricate statutory formats and everyday personal and business needs. We
+            assist individuals, families, and growing enterprises in drafting and organizing required paperwork with
+            precision and ease.
+          </p>
+
+          <p class="text-body mb-4">
+            Whether you are leasing a commercial workspace, completing an identity affidavit, or preparing documents for
+            company incorporation, our platform ensures structured, clear, and standardized documentation formats at
+            every milestone.
+          </p>
+
+          <ul class="about-feature-list">
+            <li class="about-feature-item">
+              <span class="about-check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <div>
+                <strong>Standardized &amp; Structured Templates:</strong> Formats prepared in accordance with current
+                state and central procedural guidelines.
+              </div>
+            </li>
+            <li class="about-feature-item">
+              <span class="about-check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <div>
+                <strong>Transparent Procedural Guidance:</strong> Clear step-by-step checklists detailing stamp duty,
+                notarization, and signing requirements.
+              </div>
+            </li>
+            <li class="about-feature-item">
+              <span class="about-check-icon">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <polyline points="20 6 9 17 4 12"></polyline>
+                </svg>
+              </span>
+              <div>
+                <strong>Convenient Digital Assistance:</strong> Submit document requirements securely online without
+                endless visits to legal clerks.
+              </div>
+            </li>
+          </ul>
+
+          <div class="d-flex align-items-center gap-3 pt-2">
+            <a href="#services" class="btn btn-primary-custom">
+              <span>Learn More About Our Services</span>
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round" class="cta-arrow">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 3: SERVICES OVERVIEW (6 Cards with Refined Geometric Accents)
+       ========================================================================= -->
+  <section class="services-section section-spacing" id="services">
+    <div class="container container-custom">
+      <div class="section-header-center reveal-on-scroll">
+        <div class="eyebrow-badge">
+          <span class="pulse-dot"></span>
+          <span>Core Capabilities</span>
+        </div>
+        <h2 class="display-6 font-serif">
+          Legal Assistance for Every Important Step
+        </h2>
+        <p class="text-muted">
+          From everyday personal agreements to commercial business documents, our specialized drafting assistance
+          ensures your paperwork is comprehensive, compliant, and ready for execution.
+        </p>
+      </div>
+
+      <div class="row g-4">
+        <!-- Card 1: Rental Agreements -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="service-card">
+            <span class="service-card-corner-badge" aria-hidden="true"></span>
+            <div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                  <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+              </div>
+              <h3 class="service-title">Rental Agreements</h3>
+              <p class="service-desc">
+                Assistance with drafting residential and commercial tenancy, lease, and leave-and-license agreements
+                with custom tenure, deposit, and maintenance clauses.
+              </p>
+            </div>
+            <a href="#consultationModal" data-bs-toggle="modal" class="btn-text-custom">
+              <span>Explore Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 2: Affidavits -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="service-card">
+            <span class="service-card-corner-badge" aria-hidden="true"></span>
+            <div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                  <polyline points="10 9 9 9 8 9"></polyline>
+                </svg>
+              </div>
+              <h3 class="service-title">Affidavits</h3>
+              <p class="service-desc">
+                Assistance with sworn statements, name change declarations, address proof affidavits, gap year
+                declarations, and lost document affidavits formatted for notarization.
+              </p>
+            </div>
+            <a href="#consultationModal" data-bs-toggle="modal" class="btn-text-custom">
+              <span>Explore Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 3: Business Registration -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="service-card">
+            <span class="service-card-corner-badge" aria-hidden="true"></span>
+            <div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="2" y="7" width="20" height="14" rx="2" ry="2"></rect>
+                  <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Business Registration</h3>
+              <p class="service-desc">
+                Documentation assistance for LLP agreements, partnership deeds, MOA/AOA drafts, shareholder agreements,
+                and company registration paperwork.
+              </p>
+            </div>
+            <a href="#consultationModal" data-bs-toggle="modal" class="btn-text-custom">
+              <span>Explore Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 4: Legal Notices -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="service-card">
+            <span class="service-card-corner-badge" aria-hidden="true"></span>
+            <div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <h3 class="service-title">Legal Notices</h3>
+              <p class="service-desc">
+                Assistance with preparing, structuring, and organizing legal notice drafts for recovery of dues, breach
+                of contract, tenant evictions, and dispute communications.
+              </p>
+            </div>
+            <a href="#consultationModal" data-bs-toggle="modal" class="btn-text-custom">
+              <span>Explore Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 5: Property Documentation -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="service-card">
+            <span class="service-card-corner-badge" aria-hidden="true"></span>
+            <div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polygon points="16.24 7.76 14.12 14.12 7.76 16.24 9.88 9.88 16.24 7.76"></polygon>
+                </svg>
+              </div>
+              <h3 class="service-title">Property Documentation</h3>
+              <p class="service-desc">
+                Support with property transfer documentation, gift deed formats, power of attorney (POA) drafting, and
+                title scrutiny verification checklists.
+              </p>
+            </div>
+            <a href="#consultationModal" data-bs-toggle="modal" class="btn-text-custom">
+              <span>Explore Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Card 6: Personal Legal Documents -->
+        <div class="col-md-6 col-lg-4 reveal-on-scroll">
+          <div class="service-card">
+            <span class="service-card-corner-badge" aria-hidden="true"></span>
+            <div>
+              <div class="service-icon-box">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"></path>
+                </svg>
+              </div>
+              <h3 class="service-title">Personal Legal Documents</h3>
+              <p class="service-desc">
+                Assistance with personal declarations, non-disclosure agreements, loan agreements between individuals,
+                and power of attorney authorizations.
+              </p>
+            </div>
+            <a href="#consultationModal" data-bs-toggle="modal" class="btn-text-custom">
+              <span>Explore Service</span>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+                stroke-linecap="round" stroke-linejoin="round">
+                <line x1="5" y1="12" x2="19" y2="12"></line>
+                <polyline points="12 5 19 12 12 19"></polyline>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 4: HOW IT WORKS (Editorial Side-by-Side Timeline)
+       ========================================================================= -->
+  <section class="how-it-works-section section-spacing" id="how-it-works">
+    <div class="container container-custom">
+      <div class="row align-items-center g-5">
+        <!-- Supporting Editorial Photo Column (Left) -->
+        <div class="col-lg-5 reveal-on-scroll">
+          <div class="editorial-image-wrapper">
+            <!-- Floating Geometric Squares – COMPOSITION 2: Offset Grid -->
+            <div class="geo-decoration-group">
+              <!-- Top-right gold anchor -->
+              <span class="geo-square geo-square-gold geo-square-sm" style="top: -16px; right: 20px;"></span>
+              <!-- Secondary gold offset -->
+              <span class="geo-square geo-square-gold geo-square-xs"
+                style="top: 10px; right: 56px; opacity: 0.55;"></span>
+              <!-- Left-side navy outlined square -->
+              <span class="geo-square geo-square-outline-navy geo-square-md" style="top: 50px; left: -18px;"></span>
+              <!-- Bronze small accent -->
+              <span class="geo-square geo-square-bronze geo-square-xs" style="bottom: 80px; right: -14px;"></span>
+              <!-- Large light square bottom anchor -->
+              <span class="geo-square geo-square-light geo-square-lg" style="bottom: -24px; left: 14px;"></span>
+              <!-- Tiny bronze upper cluster -->
+              <span class="geo-square geo-square-bronze geo-square-xs"
+                style="top: -6px; left: 30px; opacity: 0.5;"></span>
+            </div>
+
+            <img src="assets/images/how-it-works-process.jpg" alt="Client and legal advisor executing formal document"
+              class="editorial-img" width="560" height="420" loading="lazy">
+
+            <div class="about-floating-badge"
+              style="bottom: 1.5rem; inset-inline-end: 1.5rem; inset-inline-start: auto;">
+              <div class="badge-icon-box">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 16 14"></polyline>
+                </svg>
+              </div>
+              <div class="about-badge-text">
+                <span class="about-badge-number">4 Steps</span>
+                <span class="about-badge-label">Guided Documentation</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Four Process Steps (Right) -->
+        <div class="col-lg-7 reveal-on-scroll">
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>Simple Four-Step Workflow</span>
+          </div>
+          <h2 class="display-6 font-serif mb-4">
+            Your Documentation Journey, Made Simple
+          </h2>
+          <p class="lead text-body mb-4">
+            We have eliminated convoluted paper trails. Experience a streamlined, transparent journey from your first
+            inquiry to ready-to-execute legal documents.
+          </p>
+
+          <div class="how-it-works-timeline">
+            <!-- Step 01 -->
+            <div class="editorial-step-item">
+              <div class="editorial-step-node">01</div>
+              <div class="editorial-step-content">
+                <h4 class="editorial-step-title">Share Your Requirement</h4>
+                <p class="editorial-step-desc">
+                  Submit your document details, party information, and specific conditions through our secure online
+                  intake form.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 02 -->
+            <div class="editorial-step-item">
+              <div class="editorial-step-node">02</div>
+              <div class="editorial-step-content">
+                <h4 class="editorial-step-title">Get Initial Guidance</h4>
+                <p class="editorial-step-desc">
+                  Our documentation specialist reviews your submission, clarifies jurisdictional nuances, and shares a
+                  drafting checklist.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 03 -->
+            <div class="editorial-step-item">
+              <div class="editorial-step-node">03</div>
+              <div class="editorial-step-content">
+                <h4 class="editorial-step-title">Document Preparation Assistance</h4>
+                <p class="editorial-step-desc">
+                  Your document draft is professionally prepared, structured with essential protections, and verified
+                  against standard requirements.
+                </p>
+              </div>
+            </div>
+
+            <!-- Step 04 -->
+            <div class="editorial-step-item">
+              <div class="editorial-step-node">04</div>
+              <div class="editorial-step-content">
+                <h4 class="editorial-step-title">Review &amp; Next Steps</h4>
+                <p class="editorial-step-desc">
+                  Review your draft, request revisions, and receive clear instructions on stamp paper, execution, and
+                  registration procedures.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Compliance & Legal Disclaimer Box -->
+      <div class="compliance-disclaimer-box reveal-on-scroll">
+        <div class="disclaimer-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+            stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="12" r="10"></circle>
+            <line x1="12" y1="8" x2="12" y2="12"></line>
+            <line x1="12" y1="16" x2="12.01" y2="16"></line>
+          </svg>
+        </div>
+        <p class="disclaimer-text">
+          <strong>Important Regulatory Notice:</strong> LegalEase provides self-service document formatting and clerical
+          documentation assistance. Actual legal validity, official stamp duty verification, judicial filing, and
+          professional legal representation may require the engagement of an authorized, licensed legal advocate or
+          statutory registration authority in your jurisdiction.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 5: WHY CHOOSE LEGALEASE (Asymmetric 2-Column with Photo & Quote)
+       ========================================================================= -->
+  <section class="why-choose-section section-spacing" id="why-choose">
+    <div class="container container-custom">
+      <div class="row align-items-center g-5">
+        <!-- LEFT SIDE: Editorial Content & 2x2 Benefit Grid -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="eyebrow-badge">
+            <span class="pulse-dot"></span>
+            <span>The LegalEase Advantage</span>
+          </div>
+
+          <h2 class="display-6 font-serif mb-3">
+            Meticulous Attention to Every Clause, Deed &amp; Declaration
+          </h2>
+
+          <p class="text-body mb-4">
+            We combine procedural diligence with responsive human guidance, ensuring that your commercial contracts and
+            personal documentation are structured with utmost clarity and accuracy.
+          </p>
+
+          <div class="benefit-grid-2x2">
+            <!-- Benefit 1 -->
+            <div class="benefit-grid-card">
+              <div class="benefit-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+                  <polyline points="22 4 12 14.01 9 11.01"></polyline>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Attentive Assistance</h3>
+              <p class="benefit-desc">
+                Dedicated document specialists reviewing party details, conditions, and custom tenancy or partnership
+                terms.
+              </p>
+            </div>
+
+            <!-- Benefit 2 -->
+            <div class="benefit-grid-card">
+              <div class="benefit-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
+                  <polyline points="14 2 14 8 20 8"></polyline>
+                  <line x1="16" y1="13" x2="8" y2="13"></line>
+                  <line x1="16" y1="17" x2="8" y2="17"></line>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Documentation Expertise</h3>
+              <p class="benefit-desc">
+                Standardized templates drafted in alignment with current statutory standards and jurisdictional formats.
+              </p>
+            </div>
+
+            <!-- Benefit 3 -->
+            <div class="benefit-grid-card">
+              <div class="benefit-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                  <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Confidentiality</h3>
+              <p class="benefit-desc">
+                Strict data privacy protections and secure encryption protocols safeguarding sensitive client
+                identifiers.
+              </p>
+            </div>
+
+            <!-- Benefit 4 -->
+            <div class="benefit-grid-card">
+              <div class="benefit-icon-wrapper">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                  stroke-linecap="round" stroke-linejoin="round">
+                  <circle cx="12" cy="12" r="10"></circle>
+                  <polyline points="12 6 12 12 14 14"></polyline>
+                </svg>
+              </div>
+              <h3 class="benefit-title">Accessible Support</h3>
+              <p class="benefit-desc">
+                Straightforward consultations, transparent status tracking, and rapid response times without
+                administrative hurdles.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT SIDE: Editorial Photo with Geometric Squares & Overlapping Quote Panel -->
+        <div class="col-lg-6 reveal-on-scroll">
+          <div class="editorial-image-wrapper mt-3 mt-lg-0 mb-4 pb-4">
+            <!-- Floating Geometric Squares – COMPOSITION 3: Layered Corner -->
+            <div class="geo-decoration-group">
+              <!-- Large outlined square behind photo top-right -->
+              <span class="geo-square geo-square-outline geo-square-lg" style="top: -22px; right: -22px;"></span>
+              <!-- Filled gold square inside outlined -->
+              <span class="geo-square geo-square-gold geo-square-md" style="top: -10px; right: -10px;"></span>
+              <!-- Small navy accent overlapping upper corner -->
+              <span class="geo-square geo-square-navy geo-square-xs"
+                style="top: 20px; right: 24px; opacity: 0.7;"></span>
+              <!-- Bronze left-side accent -->
+              <span class="geo-square geo-square-bronze geo-square-sm" style="top: 28px; left: -16px;"></span>
+              <!-- Tiny bronze cluster offset -->
+              <span class="geo-square geo-square-bronze geo-square-xs"
+                style="top: 60px; left: 14px; opacity: 0.5;"></span>
+              <!-- Bottom left light float -->
+              <span class="geo-square geo-square-light geo-square-xs"
+                style="top: -10px; left: 38%; opacity: 0.9;"></span>
+            </div>
+
+            <img src="assets/images/why-choose-consultation.jpg"
+              alt="Two legal professionals reviewing contract documentation at conference table" class="editorial-img"
+              width="600" height="400" loading="lazy">
+
+            <!-- Overlapping Dark Navy Quote Panel -->
+            <div class="overlapping-quote-panel">
+              <div class="quote-mark-gold">&ldquo;</div>
+              <p class="quote-text">
+                Precision in documentation is not just about compliance—it provides enduring confidence in every
+                personal and commercial agreement you execute.
+              </p>
+              <div class="quote-author-row">
+                <span class="quote-author-name">Advisory Council</span>
+                <span class="text-white-50">&bull;</span>
+                <span class="quote-author-role">LegalEase Documentation Services</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 6: TRUST / TESTIMONIALS (Uniform 3-Column Grid)
+       ========================================================================= -->
+  <section class="testimonials-section section-spacing" id="testimonials">
+    <div class="container container-custom">
+      <div class="section-header-center reveal-on-scroll">
+        <div class="eyebrow-badge">
+          <span class="pulse-dot"></span>
+          <span>Client Experiences</span>
+        </div>
+        <h2 class="display-6 font-serif">
+          Experiences That Build Trust
+        </h2>
+        <p class="text-muted">
+          Read what individuals and business owners have to say about their document preparation journey with LegalEase.
+        </p>
+      </div>
+
+      <div class="testimonial-grid reveal-on-scroll">
+
+        <!-- Card 1 -->
+        <div class="tcard">
+          <div class="tcard-stars" aria-label="5 out of 5 stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="tcard-quote">
+            &ldquo;Getting our commercial lease agreement drafted was seamless. The clauses were clearly explained and
+            tailored to our exact security deposit terms without unnecessary delays.&rdquo;
+          </p>
+          <hr class="tcard-divider">
+          <div class="tcard-author">
+            <div class="tcard-avatar">RK</div>
+            <div class="tcard-author-info">
+              <span class="tcard-name">Rajiv K.</span>
+              <span class="tcard-role">Retail Store Owner &bull; Delhi</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="tcard">
+          <div class="tcard-stars" aria-label="5 out of 5 stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="tcard-quote">
+            &ldquo;I required an urgent name change affidavit and gap certificate. The template was precise, formatted
+            correctly for the notary, and delivered in under 24 hours.&rdquo;
+          </p>
+          <hr class="tcard-divider">
+          <div class="tcard-author">
+            <div class="tcard-avatar">SM</div>
+            <div class="tcard-author-info">
+              <span class="tcard-name">Sneha M.</span>
+              <span class="tcard-role">Postgraduate Scholar</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="tcard">
+          <div class="tcard-stars" aria-label="5 out of 5 stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="tcard-quote">
+            &ldquo;As a startup founder, structuring our partnership deed and vendor agreements felt daunting. LegalEase
+            simplified the entire paperwork process with absolute professionalism.&rdquo;
+          </p>
+          <hr class="tcard-divider">
+          <div class="tcard-author">
+            <div class="tcard-avatar">AT</div>
+            <div class="tcard-author-info">
+              <span class="tcard-name">Anand T.</span>
+              <span class="tcard-role">Tech Co-founder &bull; Bangalore</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="tcard">
+          <div class="tcard-stars" aria-label="5 out of 5 stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="tcard-quote">
+            &ldquo;The gift deed format provided was thorough and covered every clause our family property transfer
+            needed. Saved us considerable time and avoided multiple visits to the notary.&rdquo;
+          </p>
+          <hr class="tcard-divider">
+          <div class="tcard-author">
+            <div class="tcard-avatar">PR</div>
+            <div class="tcard-author-info">
+              <span class="tcard-name">Priya R.</span>
+              <span class="tcard-role">Homeowner &bull; Mumbai</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 5 -->
+        <div class="tcard">
+          <div class="tcard-stars" aria-label="5 out of 5 stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="tcard-quote">
+            &ldquo;Their NDA and vendor contract templates were well-structured and immediately usable. Our legal team
+            appreciated the professional formatting and standard protective clauses included.&rdquo;
+          </p>
+          <hr class="tcard-divider">
+          <div class="tcard-author">
+            <div class="tcard-avatar">VN</div>
+            <div class="tcard-author-info">
+              <span class="tcard-name">Vikram N.</span>
+              <span class="tcard-role">Operations Director &bull; Pune</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 6 -->
+        <div class="tcard">
+          <div class="tcard-stars" aria-label="5 out of 5 stars">
+            <span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span><span>&#9733;</span>
+          </div>
+          <p class="tcard-quote">
+            &ldquo;I needed a declaration affidavit for my bank account update. The process was straightforward and the
+            final document was accepted without any revisions. Highly recommended.&rdquo;
+          </p>
+          <hr class="tcard-divider">
+          <div class="tcard-author">
+            <div class="tcard-avatar">KS</div>
+            <div class="tcard-author-info">
+              <span class="tcard-name">Kavita S.</span>
+              <span class="tcard-role">Government Employee &bull; Chennai</span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- Sample feedback disclaimer -->
+      <p class="tcard-disclaimer reveal-on-scroll">
+        &#9432;&nbsp; All reviews displayed are sample feedback for illustrative purposes only. Actual client
+        experiences may vary.
+      </p>
+
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 8: FAQ (Bootstrap Accordion)
+       ========================================================================= -->
+  <section class="faq-section section-spacing" id="faq">
+    <div class="container container-custom">
+      <div class="section-header-center reveal-on-scroll">
+        <div class="eyebrow-badge">
+          <span class="pulse-dot"></span>
+          <span>Common Inquiries</span>
+        </div>
+        <h2 class="display-6 font-serif">
+          Frequently Asked Questions
+        </h2>
+        <p class="text-muted">
+          Find answers to frequently asked questions regarding our legal documentation assistance, workflows, and
+          procedures.
+        </p>
+      </div>
+
+      <div class="row justify-content-center">
+        <div class="col-lg-9 reveal-on-scroll">
+          <div class="accordion custom-accordion" id="faqAccordion">
+
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingOne">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  How does LegalEase assist with rental and lease agreements?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  We assist you by gathering required terms—such as tenure, security deposits, notice periods, and
+                  maintenance responsibilities—and structuring them into a clear, legally sound draft. We also provide
+                  guidance on the necessary stamp paper value and biometric e-registration procedures applicable to your
+                  state.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingTwo">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  What documents and details do I need to prepare an affidavit?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Generally, you will need a valid government identity proof (such as Aadhaar, Voter ID, or Passport),
+                  relevant background evidence (such as educational certificates for a gap affidavit or marriage
+                  certificate for a surname change), and a clear statement of facts. We format these into the standard
+                  judicial swearing declaration format.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingThree">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  Can you assist with business registration filings and agreements?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Yes. We prepare standard foundational documentation including Partnership Deeds, LLP Agreements,
+                  Memorandum and Articles of Association (MOA/AOA drafts), and Non-Disclosure Agreements (NDAs) to
+                  support your registration filings with statutory authorities.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFour">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  What is the typical turnaround time for document preparation?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Standard document drafts such as residential rental agreements and basic affidavits are typically
+                  formatted and delivered within 24 to 48 business hours after receiving complete information. Complex
+                  commercial agreements or multiple-partner deeds generally require 3 to 4 business days for thorough
+                  structuring.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingFive">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  Is my personal information and document data kept confidential?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingFive"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  Strictly. We adhere to high data privacy standards. All draft submissions and personal identifiers are
+                  encrypted, accessed solely for drafting purposes by authorized documentation specialists, and never
+                  shared or sold to third parties.
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 6 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="headingSix">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                  Does LegalEase provide courtroom litigation or formal legal representation?
+                </button>
+              </h2>
+              <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingSix"
+                data-bs-parent="#faqAccordion">
+                <div class="accordion-body">
+                  LegalEase specializes exclusively in document drafting assistance, structuring, and informational
+                  guidance. We do not act as an advocate in courtroom litigation or provide judicial representation. If
+                  your matter requires contested litigation, we advise consulting an independent advocate registered
+                  with the Bar Council.
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================================
+       SECTION 8: CALL TO ACTION (Injected via js/components/cta.js)
+       ========================================================================= -->
+  <div id="cta-container"></div>
+
+  <!-- =========================================================================
+       SECTION 9: FOOTER (Injected via js/components/footer.js)
+       ========================================================================= -->
+  <div id="footer-container"></div>
+
+  <!-- =========================================================================
+       MODAL: Book a Consultation
+       ========================================================================= -->
+  <div class="modal fade custom-modal" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-2">
+            <img src="assets/icons/icon.png" alt="LegalEase" class="brand-logo brand-logo-modal" width="57" height="38">
+            <h5 class="modal-title mb-0" id="consultationModalLabel">Book a Document Consultation</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small mb-3">
+            Please provide your requirement details. A documentation specialist will review and contact you with
+            structured guidance.
+          </p>
+
+          <form id="consultationForm">
+            <div class="mb-3">
+              <label for="consultName" class="form-label">Full Name *</label>
+              <input type="text" class="form-control" id="consultName" placeholder="e.g. Ramesh Sharma" required>
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-md-6">
+                <label for="consultPhone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="consultPhone" placeholder="e.g. +91 98765 43210" required>
+              </div>
+              <div class="col-md-6">
+                <label for="consultEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="consultEmail" placeholder="name@example.com">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="consultService" class="form-label">Service Required *</label>
+              <select class="form-select" id="consultService" required>
+                <option value="" selected disabled>Select documentation category</option>
+                <option value="rental">Rental / Lease Agreement</option>
+                <option value="affidavit">Affidavit / Sworn Statement</option>
+                <option value="business">Business Registration &amp; Deed</option>
+                <option value="notice">Legal Notice Assistance</option>
+                <option value="property">Property Document / Power of Attorney</option>
+                <option value="personal">Personal Declarations</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="consultNotes" class="form-label">Brief Requirements</label>
+              <textarea class="form-control" id="consultNotes" rows="3"
+                placeholder="Tell us about the property, parties, or specific clauses needed..."></textarea>
+            </div>
+
+            <div id="consultationFeedback" class="d-none"></div>
+
+            <div class="d-grid mt-4">
+              <button type="submit" class="btn btn-primary-custom w-100">
+                <span>Submit Consultation Request</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" type="button" aria-label="Back to Top" title="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Reusable Navigation Bar Script -->
+  <script src="js/navbar.js"></script>
+
+  <!-- Reusable Shared Footer Script -->
+  <script src="js/components/cta.js"></script>
+
+  <!-- Reusable Shared Footer Script -->
+  <script src="js/components/footer.js"></script>
+
+  <!-- Homepage Interactions Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

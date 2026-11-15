@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LegalEase | Create Your Account</title>
+  <meta name="description"
+    content="Register for a LegalEase account to request document drafting, review affidavits, manage rental agreements, and schedule legal consultations.">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192x192.png">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Core Theme & Layout Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Dedicated Authentication Styles -->
+  <link rel="stylesheet" href="css/pages/auth.css">
+  <!-- Responsive Breakpoints -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body class="auth-page-body">
+
+  <main id="main-content">
+    <div class="auth-split-wrapper">
+
+      <!-- =========================================================================
+           LEFT COLUMN: Split-Screen Editorial Visual & Trust Canvas
+           ========================================================================= -->
+      <section class="auth-visual-pane auth-visual-signup" aria-label="LegalEase Brand & Registration Benefits">
+        <a href="index.html" class="back-home-link auth-back-home" title="Return to Home">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Home</span>
+        </a>
+        <div class="auth-welcome-photo">
+          <img src="assets/images/about-hero-consultation.jpg" alt="Lawyers reviewing legal documents together in a private office" width="1360" height="900" fetchpriority="high">
+          <span>Thoughtful guidance. Documents prepared with care.</span>
+        </div>
+
+        <div class="auth-visual-body">
+          <div class="auth-trust-badge">
+            <span>LEGAL DOCUMENTATION, MADE CLEAR</span>
+          </div>
+
+          <h1 class="auth-trust-headline">Welcome to LegalEase</h1>
+
+          <p class="auth-trust-desc">
+            Professional documentation support, clear guidance and a more confident way to handle your legal documentation needs.
+          </p>
+          <p class="auth-brand-statement">Clarity in Every Document. Confidence in Every Step.</p>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           RIGHT COLUMN: Interactive Sign Up Registration Form
+           ========================================================================= -->
+      <section class="auth-form-pane" aria-label="Sign Up Form Area">
+        <!-- Main Form Container Card -->
+        <div class="auth-form-container">
+          <div class="auth-card">
+
+            <a href="index.html" class="auth-mobile-brand" aria-label="LegalEase Home">
+              <img src="assets/icons/icon.png" alt="LegalEase courthouse crest" class="brand-logo" width="68" height="45">
+              <span class="brand-text">
+                <span class="brand-title">Legal<span class="text-accent">Ease</span></span>
+                <span class="brand-tagline">Documentation</span>
+              </span>
+            </a>
+
+            <!-- =================================================================
+                 SIGN UP FORM PANEL
+                 ================================================================= -->
+            <div id="signupFormPanel" class="auth-view-panel">
+              <div class="auth-header">
+                <h2 class="auth-title">Create Your Account</h2>
+                <p class="auth-subtitle">Get started with LegalEase.</p>
+              </div>
+
+              <form id="signupForm" novalidate>
+
+                <!-- Field 1: Full Name -->
+                <div class="auth-form-group">
+                  <label for="signupName" class="auth-label">
+                    <span>Full Name<span class="required-star" aria-hidden="true">*</span></span>
+                  </label>
+                  <div class="auth-input-wrapper">
+                    <span class="auth-input-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                        <circle cx="12" cy="7" r="4"></circle>
+                      </svg>
+                    </span>
+                    <input type="text" class="auth-input" id="signupName" name="full_name" placeholder="e.g. Adv. Marcus Vance" autocomplete="name" required>
+                  </div>
+                  <div class="auth-error-feedback" id="signupNameError" role="alert"></div>
+                </div>
+
+                <!-- Field 2: Email Address -->
+                <div class="auth-form-group">
+                  <label for="signupEmail" class="auth-label">
+                    <span>Email Address<span class="required-star" aria-hidden="true">*</span></span>
+                  </label>
+                  <div class="auth-input-wrapper">
+                    <span class="auth-input-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                        <polyline points="22,6 12,13 2,6"></polyline>
+                      </svg>
+                    </span>
+                    <input type="email" class="auth-input" id="signupEmail" name="email" placeholder="name@domain.com" autocomplete="email" required>
+                  </div>
+                  <div class="auth-error-feedback" id="signupEmailError" role="alert"></div>
+                </div>
+
+                <!-- Field 3: Mobile Number -->
+                <div class="auth-form-group">
+                  <label for="signupPhone" class="auth-label">
+                    <span>Mobile Number<span class="required-star" aria-hidden="true">*</span></span>
+                  </label>
+                  <div class="auth-input-wrapper">
+                    <span class="auth-input-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                      </svg>
+                    </span>
+                    <input type="tel" class="auth-input" id="signupPhone" name="phone" placeholder="+91 98765 43210" autocomplete="tel" required>
+                  </div>
+                  <div class="auth-error-feedback" id="signupPhoneError" role="alert"></div>
+                </div>
+
+                <!-- Field 4: Password -->
+                <div class="auth-form-group">
+                  <label for="signupPassword" class="auth-label">
+                    <span>Create Password<span class="required-star" aria-hidden="true">*</span></span>
+                  </label>
+                  <div class="auth-input-wrapper">
+                    <span class="auth-input-icon" aria-hidden="true">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect x="3" y="11" width="18" height="11" rx="2" ry="2"></rect>
+                        <path d="M7 11V7a5 5 0 0 1 10 0v4"></path>
+                      </svg>
+                    </span>
+                    <input type="password" class="auth-input" id="signupPassword" name="password" placeholder="At least 8 characters" autocomplete="new-password" required>
+                    <button type="button" class="password-toggle-btn" id="togglePasswordBtn" aria-label="Show password" title="Show password">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                        <path d="M1 12s4-8 11-8 11 8 11 8-4 8-11 8-11-8-11-8z"></path>
+                        <circle cx="12" cy="12" r="3"></circle>
+                      </svg>
+                    </button>
+                  </div>
+                  <div class="auth-error-feedback" id="signupPasswordError" role="alert"></div>
+
+                  <!-- Live Password Strength Indicator -->
+                  <div class="password-strength-wrapper">
+                    <div class="strength-bar-track">
+                      <div class="strength-bar-fill" id="strengthBarFill"></div>
+                    </div>
+                    <div class="strength-text-label">
+                      <span>Password Strength:</span>
+                      <span class="strength-status-text" id="strengthStatusText">None</span>
+                    </div>
+                  </div>
+
+                </div>
+
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-primary-custom btn-auth-submit" id="signupSubmitBtn">
+                  <span>Create Account</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </button>
+
+              </form>
+
+              <div class="auth-social" aria-label="Social sign-in options">
+                <span class="auth-social-label">OR CONTINUE WITH</span>
+                <div class="auth-social-options">
+                  <button type="button" class="auth-social-button" disabled aria-label="Google sign-in unavailable" title="Google sign-in is not configured">
+                    <svg viewBox="0 0 48 48" aria-hidden="true"><path fill="#FFC107" d="M43.6 24.5c0-1.4-.1-2.8-.4-4.1H24v7.8h11a9.4 9.4 0 0 1-4.1 6.2v5.1h6.6c3.9-3.6 6.1-8.8 6.1-15Z"/><path fill="#FF3D00" d="M24 44c5.5 0 10.1-1.8 13.5-4.9l-6.6-5.1c-1.8 1.2-4.1 2-6.9 2-5.3 0-9.8-3.6-11.4-8.4H5.8v5.3A20 20 0 0 0 24 44Z"/><path fill="#4CAF50" d="M12.6 27.6a12 12 0 0 1 0-7.2v-5.3H5.8a20 20 0 0 0 0 17.8l6.8-5.3Z"/><path fill="#1976D2" d="M24 12c3 0 5.7 1 7.8 3.1l5.8-5.8C34.1 6 29.5 4 24 4A20 20 0 0 0 5.8 15.1l6.8 5.3C14.2 15.6 18.7 12 24 12Z"/></svg>
+                  </button>
+                  <button type="button" class="auth-social-button" disabled aria-label="LinkedIn sign-in unavailable" title="LinkedIn sign-in is not configured">
+                    <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 2H3.55C2.69 2 2 2.68 2 3.52v16.96c0 .84.69 1.52 1.55 1.52h16.9c.86 0 1.55-.68 1.55-1.52V3.52c0-.84-.69-1.52-1.55-1.52ZM8.1 18.9H5.15V9.4H8.1v9.5ZM6.63 8.1a1.71 1.71 0 1 1 0-3.42 1.71 1.71 0 0 1 0 3.42ZM18.9 18.9h-2.94v-4.62c0-1.1-.02-2.5-1.53-2.5-1.53 0-1.77 1.2-1.77 2.42v4.7H9.72V9.4h2.82v1.3h.04c.39-.74 1.35-1.52 2.78-1.52 2.98 0 3.54 1.96 3.54 4.5v5.22Z"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <div class="auth-switch-prompt">
+                <span>Already have an account?</span>
+                <a href="login.html">Sign In</a>
+              </div>
+            </div>
+
+            <div id="signupSuccessPanel" class="auth-success-card d-none">
+              <h2 class="auth-success-title">Details Validated</h2>
+              <p class="auth-success-desc">This demo checked your details locally. No account was created.</p>
+              <a href="login.html" class="btn btn-primary-custom w-100 justify-content-center">Sign In</a>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Dedicated Sign Up Page Interaction Script -->
+  <script src="js/pages/signup.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,378 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Service Details | LegalEase Legal Documentation Services</title>
+  <meta name="description"
+    content="Professional legal documentation assistance, statutory verification, and drafting services by LegalEase.">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192x192.png">
+
+  <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- Core Theme & Layout Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Dynamic Service Detail Specific Styles -->
+  <link rel="stylesheet" href="css/pages/service-detail.css">
+  <!-- Common Reusable CTA Styles -->
+  <link rel="stylesheet" href="css/components/cta.css">
+  <!-- Reusable Shared Footer Styles -->
+  <link rel="stylesheet" href="css/components/footer.css">
+  <!-- Responsive Breakpoints -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Reusable Navigation Bar Placeholder (Injected via js/navbar.js) -->
+  <header id="main-navbar-container"></header>
+
+  <main id="main-content">
+
+    <!-- Container for "Service Not Found" state (hidden by default) -->
+    <div id="service-not-found-container" class="d-none"></div>
+
+    <!-- Main Dynamic Service Detail Container -->
+    <div id="service-detail-container">
+
+      <!-- =========================================================================
+           SECTION 1: SERVICE HERO (Breadcrumb, Dynamic Title, Description & Hero Visual)
+           ========================================================================= -->
+      <section class="detail-hero-section" id="detail-hero">
+        <div class="detail-hero-overlay" aria-hidden="true"></div>
+
+        <div class="container container-custom position-relative">
+          <!-- Breadcrumb Navigation -->
+          <nav class="detail-breadcrumb-wrap" aria-label="Breadcrumb">
+            <ol class="detail-breadcrumb">
+              <li><a href="index.html">Home</a></li>
+              <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+              <li><a href="services.html">Services</a></li>
+              <li class="breadcrumb-separator" aria-hidden="true">&rsaquo;</li>
+              <li class="breadcrumb-current" id="breadcrumb-current-name" aria-current="page">Service Detail</li>
+            </ol>
+          </nav>
+
+          <div class="row align-items-center g-4 g-xl-5">
+            <!-- Left Column: Content -->
+            <div class="col-lg-7 detail-hero-content reveal-on-scroll">
+              <div class="eyebrow-badge mb-3">
+                <span class="pulse-dot"></span>
+                <span id="hero-service-category">Property Documents</span>
+              </div>
+
+              <h1 class="detail-hero-title" id="hero-service-title">
+                Rental &amp; Lease Agreements
+              </h1>
+
+              <p class="detail-hero-desc" id="hero-service-desc">
+                Professional drafting assistance for rental agreements, lease terms and property documentation.
+              </p>
+
+              <div class="detail-hero-actions">
+                <a href="#consultationModal" data-bs-toggle="modal" data-bs-target="#consultationModal" class="btn btn-primary-custom">
+                  <span>Request Consultation</span>
+                  <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" class="ms-2">
+                    <line x1="5" y1="12" x2="19" y2="12"></line>
+                    <polyline points="12 5 19 12 12 19"></polyline>
+                  </svg>
+                </a>
+                <a href="#detail-overview" class="btn btn-secondary-custom">
+                  <span>Explore Details</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Visual Preview -->
+            <div class="col-lg-5 reveal-on-scroll">
+              <div class="detail-hero-img-wrap">
+                <img id="hero-service-img" src="assets/images/service-detail-rental-clear.jpg" alt="Service Preview" class="detail-hero-img" loading="eager" width="500" height="380">
+                <span class="detail-hero-badge-tag" id="hero-turnaround-badge">24–48 Hours</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           SECTION 2: SERVICE OVERVIEW (Detailed Explanation & Key Highlights)
+           ========================================================================= -->
+      <section class="detail-overview-section" id="detail-overview">
+        <div class="container container-custom">
+          <div class="row align-items-center g-4 g-xl-5">
+
+            <!-- Left Column: Overview Image with Accents -->
+            <div class="col-lg-6 reveal-on-scroll">
+              <div class="position-relative">
+                <div class="geo-decoration-group" aria-hidden="true">
+                  <span class="geo-square geo-square-gold geo-square-sm" style="top: -12px; inset-inline-end: 20px;"></span>
+                  <span class="geo-square geo-square-outline geo-square-md" style="bottom: -15px; inset-inline-start: 15px;"></span>
+                </div>
+                <div class="detail-overview-img-wrap">
+                  <img id="overview-service-img" src="assets/images/about-legal-document.jpg" alt="Service Overview" class="detail-overview-img" loading="lazy" width="560" height="420">
+                </div>
+              </div>
+            </div>
+
+            <!-- Right Column: Descriptive Content & Key Points -->
+            <div class="col-lg-6 reveal-on-scroll">
+              <div class="eyebrow-badge mb-3">
+                <span class="pulse-dot"></span>
+                <span>COMPREHENSIVE OVERVIEW</span>
+              </div>
+
+              <h2 class="detail-overview-headline" id="overview-service-title">
+                Structured Preparation &amp; Verification
+              </h2>
+
+              <p class="detail-overview-lead" id="overview-service-desc">
+                Our documentation assistance ensures critical covenants, obligations, statutory terms, and dispute mechanisms are meticulously drafted.
+              </p>
+
+              <!-- Highlights Checkmarks List -->
+              <ul class="detail-points-list" id="overview-points-list">
+                <!-- Dynamically populated -->
+              </ul>
+
+              <div id="overview-statutory-notice" class="detail-statutory-badge">
+                <!-- Dynamically populated -->
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           SECTION 3: KEY FEATURES & STATUTORY PROTECTION
+           ========================================================================= -->
+      <section class="detail-features-section" id="detail-features">
+        <div class="container container-custom">
+          <div class="section-header-center reveal-on-scroll">
+            <div class="eyebrow-badge mx-auto mb-3">
+              <span class="pulse-dot"></span>
+              <span>SPECIALIZED PROVISIONS</span>
+            </div>
+            <h2 class="section-title">
+              Key Features &amp; <span class="text-accent">Protection</span>
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              Carefully structured clauses designed to prevent procedural ambiguities and safeguard the legal interests of all participating parties.
+            </p>
+          </div>
+
+          <!-- Dynamic 6-Card Feature Grid -->
+          <div class="row g-4 mt-2" id="features-grid-container">
+            <!-- Dynamically populated via js/service-detail.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           SECTION 4: HOW IT WORKS (4-Step Process Timeline)
+           ========================================================================= -->
+      <section class="detail-process-section" id="detail-process">
+        <div class="container container-custom">
+          <div class="section-header-center reveal-on-scroll">
+            <div class="eyebrow-badge mx-auto mb-3">
+              <span class="pulse-dot"></span>
+              <span>STEP-BY-STEP WORKFLOW</span>
+            </div>
+            <h2 class="section-title">
+              Straightforward <span class="text-accent">4-Step</span> Process
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              From requirement submission to final draft delivery, our structured documentation process guarantees total transparency at every milestone.
+            </p>
+          </div>
+
+          <!-- Dynamic 4-Step Process Grid -->
+          <div class="row g-4 mt-2" id="process-steps-container">
+            <!-- Dynamically populated via js/service-detail.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           SECTION 5: PRICING & ASSISTANCE PLANS
+           ========================================================================= -->
+      <section class="detail-pricing-section" id="detail-pricing">
+        <div class="container container-custom">
+          <div class="section-header-center reveal-on-scroll">
+            <div class="eyebrow-badge mx-auto mb-3">
+              <span class="pulse-dot"></span>
+              <span>ASSISTANCE TIERS</span>
+            </div>
+            <h2 class="section-title">
+              Transparent <span class="text-accent">Documentation</span> Plans
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              Select the level of legal drafting assistance that matches your documentation complexity.
+            </p>
+          </div>
+
+          <!-- Dynamic 3-Card Pricing Grid -->
+          <div class="row g-4 justify-content-center mt-2" id="pricing-plans-container">
+            <!-- Dynamically populated via js/service-detail.js -->
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           SECTION 6: FREQUENTLY ASKED QUESTIONS (Bootstrap Accordion)
+           ========================================================================= -->
+      <section class="detail-faq-section" id="detail-faqs">
+        <div class="container container-custom">
+          <div class="section-header-center reveal-on-scroll">
+            <div class="eyebrow-badge mx-auto mb-3">
+              <span class="pulse-dot"></span>
+              <span>COMMON INQUIRIES</span>
+            </div>
+            <h2 class="section-title">
+              Frequently Asked <span class="text-accent">Questions</span>
+            </h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">
+              Clear answers to the most common questions regarding document preparation, validity, and procedural requirements.
+            </p>
+          </div>
+
+          <!-- Accordion Container -->
+          <div class="detail-faq-accordion mt-4 reveal-on-scroll">
+            <div class="accordion" id="serviceFaqAccordion">
+              <!-- Dynamically populated via js/service-detail.js -->
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- =========================================================================
+           SECTION 7: COMMON REUSABLE CALL TO ACTION (CTA)
+           ========================================================================= -->
+      <div id="cta-container"></div>
+
+    </div>
+
+  </main>
+
+  <!-- =========================================================================
+       COMMON FOOTER (Injected via js/components/footer.js)
+       ========================================================================= -->
+  <div id="footer-container"></div>
+
+  <!-- =========================================================================
+       CONSULTATION MODAL (Shared with Home 1, Home 2, About, Services)
+       ========================================================================= -->
+  <div class="modal fade custom-modal" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-2">
+            <img src="assets/icons/icon.png" alt="LegalEase" class="brand-logo brand-logo-modal" width="57" height="38">
+            <h5 class="modal-title mb-0" id="consultationModalLabel">Book a Document Consultation</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small mb-3">
+            Please provide your requirement details. A documentation specialist will review and contact you with structured guidance.
+          </p>
+
+          <form id="consultationForm">
+            <div class="mb-3">
+              <label for="consultName" class="form-label">Full Name *</label>
+              <input type="text" class="form-control" id="consultName" placeholder="e.g. Ramesh Sharma" required>
+            </div>
+
+            <div class="row g-2 mb-3">
+              <div class="col-md-6">
+                <label for="consultPhone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="consultPhone" placeholder="e.g. +91 98765 43210" required>
+              </div>
+              <div class="col-md-6">
+                <label for="consultEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="consultEmail" placeholder="name@example.com">
+              </div>
+            </div>
+
+            <div class="mb-3">
+              <label for="consultService" class="form-label">Service Required *</label>
+              <select class="form-select" id="consultService" required>
+                <option value="" selected disabled>Select documentation service</option>
+                <option value="rental-agreements">Rental &amp; Lease Agreements</option>
+                <option value="affidavits">Affidavits &amp; Declarations</option>
+                <option value="business-registration">Business Registration Assistance</option>
+                <option value="legal-notices">Legal Notice Drafting</option>
+                <option value="sale-deeds">Sale Deeds &amp; Property Documents</option>
+                <option value="indemnity-bonds">Indemnity Bonds &amp; Undertakings</option>
+              </select>
+            </div>
+
+            <div class="mb-3">
+              <label for="consultNotes" class="form-label">Brief Requirements</label>
+              <textarea class="form-control" id="consultNotes" rows="3"
+                placeholder="Tell us about the property, parties, or specific clauses needed..."></textarea>
+            </div>
+
+            <div class="d-grid mt-4">
+              <button type="submit" class="btn btn-primary-custom w-100">
+                <span>Submit Consultation Request</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top Floating Button -->
+  <button class="back-to-top-btn" id="backToTopBtn" type="button" aria-label="Back to Top" title="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+      stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Bootstrap 5 JS Bundle -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Centralized Services Data Repository -->
+  <script src="js/service-data.js"></script>
+
+  <!-- Reusable Navigation Bar Component Script -->
+  <script src="js/navbar.js"></script>
+
+  <!-- Dynamic Service Detail Page Engine Script -->
+  <script src="js/service-detail.js"></script>
+
+  <!-- Reusable Common CTA Component Script -->
+  <script src="js/components/cta.js"></script>
+
+  <!-- Reusable Shared Footer Component Script -->
+  <script src="js/components/footer.js"></script>
+
+  <!-- Core Interactions Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

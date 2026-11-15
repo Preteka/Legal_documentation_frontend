@@ -1,0 +1,388 @@
+/**
+ * LegalEase - Universal Common Call-to-Action (CTA) Component Stylesheet
+ * File: css/components/cta.css
+ * Shared across all pages: Home 1, Home 2, About Us, Services, Blog, Contact
+ * Supports: Dark/Light Themes, LTR/RTL, Fluid Responsive Grid, Interactive Hover States
+ */
+
+/* --------------------------------------------------------------------------
+   1. CTA SECTION CONTAINER & THEMES
+   -------------------------------------------------------------------------- */
+.common-cta-section {
+  position: relative;
+  padding: 5.5rem 0;
+  overflow: hidden;
+  background-color: var(--bg-primary);
+  transition: background-color var(--transition-normal);
+}
+
+/* Outer Card Container */
+.common-cta-card {
+  position: relative;
+  border-radius: var(--radius-xl, 24px);
+  padding: 4.25rem 3.75rem;
+  background: linear-gradient(135deg, #0E1626 0%, #172338 50%, #0F1827 100%);
+  border: 1.5px solid rgba(169, 135, 67, 0.42);
+  box-shadow: 0 20px 60px rgba(0, 0, 0, 0.5), 0 0 30px rgba(169, 135, 67, 0.12);
+  overflow: hidden;
+  color: #FFFFFF;
+  transition: all var(--transition-normal);
+}
+
+/* Light Theme: Warm Ivory / Cream Background with rich contrast */
+[data-theme="light"] .common-cta-card {
+  background: linear-gradient(135deg, #FAF8F2 0%, #F3EEE3 55%, #EBE3D3 100%);
+  border: 1.5px solid rgba(169, 135, 67, 0.45);
+  box-shadow: 0 20px 50px rgba(128, 97, 44, 0.14), 0 4px 18px rgba(0, 0, 0, 0.05);
+  color: var(--text-heading, #101827);
+}
+
+/* Radial Glow Behind Content */
+.common-cta-glow {
+  position: absolute;
+  top: -30%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(169, 135, 67, 0.22) 0%, transparent 70%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+[data-theme="light"] .common-cta-glow {
+  background: radial-gradient(circle, rgba(169, 135, 67, 0.16) 0%, transparent 70%);
+}
+
+/* Decorative Floating Geometric Squares */
+.common-cta-geo-group {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.common-cta-geo-sq-1 {
+  position: absolute;
+  top: 26px;
+  right: 44%;
+  opacity: 0.35;
+  animation: geoFloat 8s ease-in-out infinite alternate;
+}
+
+.common-cta-geo-sq-2 {
+  position: absolute;
+  bottom: 30px;
+  left: 24%;
+  opacity: 0.3;
+  animation: geoFloat 9s ease-in-out infinite alternate-reverse;
+}
+
+.common-cta-geo-sq-3 {
+  position: absolute;
+  top: 62%;
+  left: 46%;
+  opacity: 0.25;
+}
+
+/* --------------------------------------------------------------------------
+   2. CONTENT LAYOUT (LEFT COLUMN)
+   -------------------------------------------------------------------------- */
+.common-cta-content {
+  position: relative;
+  z-index: 2;
+}
+
+.common-cta-eyebrow {
+  margin-bottom: 1.25rem;
+}
+
+.common-cta-headline {
+  font-family: var(--font-heading, 'Playfair Display', Georgia, serif);
+  font-size: 2.85rem;
+  font-weight: 700;
+  line-height: 1.18;
+  color: #FFFFFF;
+  margin-bottom: 1.25rem;
+  letter-spacing: -0.015em;
+}
+
+[data-theme="light"] .common-cta-headline {
+  color: #101827;
+}
+
+.common-cta-desc {
+  font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+  font-size: 1.05rem;
+  line-height: 1.72;
+  color: #CBD5E1;
+  margin-bottom: 2.25rem;
+  max-width: 580px;
+}
+
+[data-theme="light"] .common-cta-desc {
+  color: #374151;
+  font-weight: 450;
+}
+
+/* Buttons Wrapper */
+.common-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.15rem;
+}
+
+/* Primary Button Styling */
+.common-cta-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.85rem;
+  font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  background: var(--gold-gradient, linear-gradient(135deg, #C5A059 0%, #B18A3F 50%, #9B7836 100%));
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: var(--radius-full, 9999px);
+  box-shadow: 0 6px 20px rgba(169, 135, 67, 0.4);
+  text-decoration: none;
+  transition: all var(--transition-fast, 0.2s ease);
+  cursor: pointer;
+}
+
+.common-cta-btn-primary:hover {
+  background: linear-gradient(135deg, #D4AF37 0%, #C29F52 50%, #A98743 100%);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 28px rgba(169, 135, 67, 0.55);
+}
+
+.common-cta-btn-primary .cta-arrow {
+  margin-inline-start: 0.5rem;
+  transition: transform var(--transition-fast, 0.2s ease);
+}
+
+.common-cta-btn-primary:hover .cta-arrow {
+  transform: translateX(4px);
+}
+
+[dir="rtl"] .common-cta-btn-primary:hover .cta-arrow {
+  transform: translateX(-4px);
+}
+
+/* Secondary Button Styling */
+.common-cta-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.85rem;
+  font-family: var(--font-body, 'Plus Jakarta Sans', sans-serif);
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #FFFFFF;
+  background: rgba(255, 255, 255, 0.08);
+  border: 1.5px solid rgba(169, 135, 67, 0.5);
+  border-radius: var(--radius-full, 9999px);
+  text-decoration: none;
+  transition: all var(--transition-fast, 0.2s ease);
+  cursor: pointer;
+}
+
+.common-cta-btn-secondary:hover {
+  background: rgba(169, 135, 67, 0.2);
+  border-color: var(--primary-gold, #A98743);
+  color: #FFFFFF;
+  transform: translateY(-2px);
+}
+
+/* Light theme secondary button inside dark CTA card: High contrast light ivory fill */
+[data-theme="light"] .common-cta-btn-secondary {
+  color: #101827 !important;
+  background: #FAF8F3 !important;
+  border: 1.5px solid #C5A059 !important;
+  font-weight: 700 !important;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.15);
+}
+
+[data-theme="light"] .common-cta-btn-secondary:hover {
+  background: #FFFFFF !important;
+  border-color: #D4AF37 !important;
+  color: #101827 !important;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+  transform: translateY(-2px);
+}
+
+[data-theme="light"] .common-cta-btn-secondary:focus {
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.4) !important;
+  outline: none !important;
+}
+
+[data-theme="light"] .common-cta-btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* Light theme primary button in CTA */
+[data-theme="light"] .common-cta-btn-primary {
+  background: linear-gradient(135deg, #B5934C 0%, #967537 100%) !important;
+  border-color: #967537 !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .common-cta-btn-primary:hover {
+  background: linear-gradient(135deg, #C2A15B 0%, #A98743 100%) !important;
+  border-color: #C2A15B !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .common-cta-btn-primary:focus {
+  box-shadow: 0 0 0 3px rgba(197, 160, 89, 0.4) !important;
+  outline: none !important;
+}
+
+/* --------------------------------------------------------------------------
+   3. VISUAL CONTAINER (RIGHT COLUMN - WEIGHING SCALES)
+   -------------------------------------------------------------------------- */
+.common-cta-visual {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+}
+
+.common-cta-scale-wrap {
+  position: relative;
+  display: inline-block;
+}
+
+.common-cta-scale-img {
+  max-width: 100%;
+  width: 380px;
+  height: 380px;
+  object-fit: contain;
+  filter: drop-shadow(0 16px 36px rgba(0, 0, 0, 0.48));
+  display: block;
+  animation: geoFloat 8s ease-in-out infinite alternate;
+}
+
+[data-theme="light"] .common-cta-scale-img {
+  filter: drop-shadow(0 12px 28px rgba(128, 97, 44, 0.28));
+}
+
+/* Floating Information Badges on Scale */
+.common-cta-badge {
+  position: absolute;
+  background: rgba(15, 23, 42, 0.88);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(169, 135, 67, 0.45);
+  border-radius: var(--radius-full, 9999px);
+  padding: 0.45rem 1rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.775rem;
+  font-weight: 700;
+  color: #FFFFFF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.35);
+  white-space: nowrap;
+}
+
+.common-cta-badge svg {
+  color: var(--secondary-gold, #C2A15B);
+  flex-shrink: 0;
+}
+
+.common-cta-badge-top {
+  top: 15px;
+  inset-inline-start: -15px;
+}
+
+.common-cta-badge-bottom {
+  bottom: 20px;
+  inset-inline-end: -15px;
+}
+
+[data-theme="light"] .common-cta-badge {
+  background: rgba(255, 255, 255, 0.95);
+  color: #101827;
+  border-color: rgba(169, 135, 67, 0.45);
+  box-shadow: 0 8px 20px rgba(128, 97, 44, 0.15);
+}
+
+/* --------------------------------------------------------------------------
+   4. RESPONSIVE BREAKPOINTS
+   -------------------------------------------------------------------------- */
+@media (max-width: 1199.98px) {
+  .common-cta-card {
+    padding: 3.5rem 2.75rem;
+  }
+  .common-cta-headline {
+    font-size: 2.45rem;
+  }
+  .common-cta-scale-img {
+    width: 320px;
+    height: 320px;
+  }
+}
+
+@media (max-width: 991.98px) {
+  .common-cta-card {
+    padding: 3rem 2.25rem;
+  }
+  .common-cta-headline {
+    font-size: 2.2rem;
+  }
+  .common-cta-scale-img {
+    width: 290px;
+    height: 290px;
+    margin-top: 2rem;
+  }
+  .common-cta-badge-top {
+    top: 5px;
+    inset-inline-start: 0;
+  }
+  .common-cta-badge-bottom {
+    bottom: 5px;
+    inset-inline-end: 0;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .common-cta-section {
+    padding: 3.5rem 0;
+  }
+  .common-cta-card {
+    padding: 2.5rem 1.5rem;
+    border-radius: var(--radius-lg, 18px);
+  }
+  .common-cta-headline {
+    font-size: 1.85rem;
+  }
+  .common-cta-desc {
+    font-size: 0.95rem;
+  }
+  .common-cta-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .common-cta-btn-primary,
+  .common-cta-btn-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+  .common-cta-scale-img {
+    width: 240px;
+    height: 240px;
+    margin-top: 2.5rem;
+  }
+  .common-cta-badge {
+    position: static;
+    margin-top: 0.75rem;
+  }
+  .common-cta-visual {
+    flex-direction: column;
+  }
+}

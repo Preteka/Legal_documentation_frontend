@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Legal Article | LegalEase Legal Insights</title>
+  <meta name="description" content="Read in-depth legal documentation insights from LegalEase advisory team.">
+
+  <!-- Favicons -->
+  <link rel="icon" type="image/png" sizes="48x48" href="assets/icons/favicon-48x48.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icons/favicon-32x32.png">
+  <link rel="apple-touch-icon" sizes="192x192" href="assets/icons/favicon-192x192.png">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;0,800;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Bootstrap 5 CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+  <!-- LegalEase Core Styles -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Blog Detail Styles -->
+  <link rel="stylesheet" href="css/pages/blog-detail.css">
+  <!-- CTA & Footer -->
+  <link rel="stylesheet" href="css/components/cta.css">
+  <link rel="stylesheet" href="css/components/footer.css">
+  <!-- Responsive -->
+  <link rel="stylesheet" href="css/responsive.css">
+</head>
+
+<body>
+
+  <!-- Navbar -->
+  <header id="main-navbar-container"></header>
+
+  <main id="main-content">
+
+    <!-- =================================================================
+         NOT FOUND STATE (hidden by default; shown when ?id= is invalid)
+         ================================================================= -->
+    <div id="blog-not-found" class="d-none">
+      <div class="container container-custom">
+        <div class="blog-not-found-wrap reveal-on-scroll">
+          <div class="blog-not-found-icon" aria-hidden="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="12" y1="8" x2="12" y2="12"></line><line x1="12" y1="16" x2="12.01" y2="16"></line></svg>
+          </div>
+          <div class="eyebrow-badge mx-auto mb-3">
+            <span class="pulse-dot"></span>
+            <span>ARTICLE NOT FOUND</span>
+          </div>
+          <h1 class="font-serif h3 mb-3">This Article Could Not Be Found</h1>
+          <p class="text-muted mb-4">The article you are looking for may have been moved or the link may be incorrect.<br>Browse our full collection of legal insights below.</p>
+          <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <a href="blog.html" class="btn btn-primary-custom">
+              <span>&larr; Return to Blog</span>
+            </a>
+            <a href="services.html" class="btn btn-secondary-custom">
+              <span>Explore Services</span>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- =================================================================
+         MAIN DETAIL CONTAINER (shown when ?id= is valid)
+         ================================================================= -->
+    <div id="blog-detail-container">
+
+      <!-- ==============================================================
+           SECTION 1: BLOG DETAIL HERO
+           ============================================================== -->
+      <section class="blog-detail-hero" id="blog-detail-hero" aria-label="Article header">
+
+        <!-- Geometric Accents -->
+        <div class="geo-decoration-group" aria-hidden="true">
+          <span class="geo-square geo-square-gold geo-square-sm" style="position:absolute;top:120px;inset-inline-end:30px;z-index:1;"></span>
+          <span class="geo-square geo-square-outline geo-square-md" style="position:absolute;bottom:40px;inset-inline-start:15px;z-index:1;"></span>
+          <span class="geo-square geo-square-bronze geo-square-xs" style="position:absolute;top:60%;inset-inline-end:12%;z-index:1;"></span>
+        </div>
+
+        <div class="container container-custom">
+
+          <!-- Breadcrumb -->
+          <nav class="blog-detail-breadcrumb reveal-on-scroll" aria-label="Breadcrumb">
+            <a href="index.html">Home</a>
+            <span class="blog-detail-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+            <a href="blog.html">Blog</a>
+            <span class="blog-detail-breadcrumb-sep" aria-hidden="true">&rsaquo;</span>
+            <span class="blog-detail-breadcrumb-current" id="detail-breadcrumb-title">Article</span>
+          </nav>
+
+          <!-- Hero Content -->
+          <div class="blog-detail-hero-content reveal-on-scroll">
+            <div class="eyebrow-badge mb-3">
+              <span class="pulse-dot"></span>
+              <span id="detail-category">Category</span>
+            </div>
+
+            <h1 class="blog-detail-title" id="detail-title">Article Title</h1>
+
+            <p class="blog-detail-excerpt" id="detail-excerpt">Article excerpt goes here.</p>
+
+            <div class="blog-detail-meta">
+              <span class="blog-detail-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg>
+                <span id="detail-author-name">Author</span>
+              </span>
+              <span class="blog-detail-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect><line x1="16" y1="2" x2="16" y2="6"></line><line x1="8" y1="2" x2="8" y2="6"></line><line x1="3" y1="10" x2="21" y2="10"></line></svg>
+                <span id="detail-date">Date</span>
+              </span>
+              <span class="blog-detail-meta-item">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 14 14"></polyline></svg>
+                <span id="detail-read-time">5 min read</span>
+              </span>
+            </div>
+          </div>
+
+          <!-- Featured Image -->
+          <div class="blog-detail-featured-img-wrap reveal-on-scroll">
+            <img
+              id="detail-featured-img"
+              src="assets/images/blog-hero-bg.jpg"
+              alt="Article featured image"
+              class="blog-detail-featured-img"
+              loading="eager"
+              width="1200" height="460"
+            >
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==============================================================
+           SECTION 2: ARTICLE BODY + SIDEBAR
+           ============================================================== -->
+      <section class="blog-detail-body-section" id="blog-detail-body" aria-label="Article content and sidebar">
+        <div class="container container-custom">
+          <div class="row g-4 g-xl-5">
+
+            <!-- Article Content Column -->
+            <div class="col-lg-8 blog-article-col">
+
+              <!-- Article Body -->
+              <article class="blog-article-content reveal-on-scroll" id="detail-article-content" aria-label="Article body">
+                <!-- Content injected by blog-detail.js -->
+              </article>
+
+              <!-- Author Section -->
+              <div class="blog-author-section reveal-on-scroll" aria-label="Author information">
+                <h2 class="font-serif mb-4" style="font-size:1.1rem;letter-spacing:0.04em;text-transform:uppercase;color:var(--text-muted);font-weight:700;">About the Author</h2>
+                <div class="blog-author-card">
+                  <img
+                    id="detail-author-img"
+                    src="assets/images/author-marcus-vance.jpg"
+                    alt="Author"
+                    class="blog-author-card-img"
+                    width="80" height="80"
+                    loading="lazy"
+                  >
+                  <div class="blog-author-card-info">
+                    <div class="blog-author-card-name" id="detail-author-name-full">Author Name</div>
+                    <div class="blog-author-card-role" id="detail-author-role">Documentation Advisor</div>
+                    <p class="blog-author-card-bio" id="detail-author-bio">Author biography.</p>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <!-- Sidebar Column -->
+            <div class="col-lg-4">
+              <aside class="blog-sidebar" aria-label="Blog sidebar">
+
+                <!-- Categories Widget -->
+                <div class="sidebar-widget">
+                  <h2 class="sidebar-widget-title">Categories</h2>
+                  <div id="sidebar-categories">
+                    <!-- Injected by blog-detail.js -->
+                  </div>
+                </div>
+
+                <!-- Recent Posts Widget -->
+                <div class="sidebar-widget">
+                  <h2 class="sidebar-widget-title">Recent Articles</h2>
+                  <div id="sidebar-recent-posts">
+                    <!-- Injected by blog-detail.js -->
+                  </div>
+                </div>
+
+                <!-- CTA Widget -->
+                <div class="sidebar-widget text-center" style="background:linear-gradient(135deg,rgba(169,135,67,0.08) 0%,rgba(169,135,67,0.03) 100%);border-color:rgba(169,135,67,0.25);">
+                  <div style="color:var(--primary-gold);margin-bottom:0.75rem;" aria-hidden="true">
+                    <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path><polyline points="14 2 14 8 20 8"></polyline><line x1="16" y1="13" x2="8" y2="13"></line><line x1="16" y1="17" x2="8" y2="17"></line></svg>
+                  </div>
+                  <h3 class="font-serif" style="font-size:1rem;margin-bottom:0.5rem;">Need Document Help?</h3>
+                  <p style="font-size:0.85rem;color:var(--text-muted);margin-bottom:1rem;">Get structured guidance from our documentation advisors.</p>
+                  <a href="#consultationModal" data-bs-toggle="modal" data-bs-target="#consultationModal" class="btn btn-primary-custom" style="height:40px;font-size:0.85rem;padding-inline:1.25rem;">
+                    <span>Book a Consultation</span>
+                  </a>
+                </div>
+
+              </aside>
+            </div>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- ==============================================================
+           SECTION 3: RELATED ARTICLES
+           ============================================================== -->
+      <section class="blog-related-section" id="related-posts-section" aria-label="Related articles">
+        <div class="container container-custom">
+
+          <div class="text-center mb-5 reveal-on-scroll">
+            <div class="eyebrow-badge mx-auto mb-3">
+              <span class="pulse-dot"></span>
+              <span>CONTINUE READING</span>
+            </div>
+            <h2 class="font-serif" style="font-size:clamp(1.6rem,3vw,2.2rem);">Related <span class="text-accent">Articles</span></h2>
+          </div>
+
+          <div class="row g-4" id="related-posts-grid">
+            <!-- Injected by blog-detail.js -->
+          </div>
+
+        </div>
+      </section>
+
+      <!-- ==============================================================
+           COMMON CTA
+           ============================================================== -->
+      <div
+        id="cta-container"
+        data-eyebrow="DOCUMENTATION ASSISTANCE"
+        data-headline="Need Assistance With Your Documentation?"
+        data-description="Connect with LegalEase for organised documentation assistance and consultation support."
+        data-primary-text="Book a Consultation"
+        data-primary-href="#consultationModal"
+        data-secondary-text="Explore Services"
+        data-secondary-href="services.html"
+      ></div>
+
+    </div><!-- /blog-detail-container -->
+
+  </main>
+
+  <!-- Footer -->
+  <div id="footer-container"></div>
+
+  <!-- Consultation Modal -->
+  <div class="modal fade custom-modal" id="consultationModal" tabindex="-1" aria-labelledby="consultationModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <div class="d-flex align-items-center gap-2">
+            <img src="assets/icons/icon.png" alt="LegalEase" class="brand-logo brand-logo-modal" width="57" height="38">
+            <h5 class="modal-title mb-0" id="consultationModalLabel">Book a Document Consultation</h5>
+          </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p class="text-muted small mb-3">
+            Please provide your requirement details. A documentation specialist will review and contact you.
+          </p>
+          <form id="consultationForm">
+            <div class="mb-3">
+              <label for="consultName" class="form-label">Full Name *</label>
+              <input type="text" class="form-control" id="consultName" placeholder="e.g. Ramesh Sharma" required>
+            </div>
+            <div class="row g-2 mb-3">
+              <div class="col-md-6">
+                <label for="consultPhone" class="form-label">Phone Number *</label>
+                <input type="tel" class="form-control" id="consultPhone" placeholder="e.g. +91 98765 43210" required>
+              </div>
+              <div class="col-md-6">
+                <label for="consultEmail" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="consultEmail" placeholder="name@example.com">
+              </div>
+            </div>
+            <div class="mb-3">
+              <label for="consultService" class="form-label">Service Required *</label>
+              <select class="form-select" id="consultService" required>
+                <option value="" selected disabled>Select documentation category</option>
+                <option value="rental">Rental / Lease Agreement</option>
+                <option value="affidavit">Affidavit / Sworn Statement</option>
+                <option value="business">Business Registration &amp; Deed</option>
+                <option value="notice">Legal Notice Assistance</option>
+                <option value="property">Property Document</option>
+                <option value="personal">Personal Declarations</option>
+              </select>
+            </div>
+            <div class="mb-3">
+              <label for="consultNotes" class="form-label">Brief Requirements</label>
+              <textarea class="form-control" id="consultNotes" rows="3"
+                placeholder="Tell us about your documentation needs..."></textarea>
+            </div>
+            <div id="consultationFeedback" class="d-none"></div>
+            <div class="d-grid mt-4">
+              <button type="submit" class="btn btn-primary-custom w-100">
+                <span>Submit Consultation Request</span>
+              </button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Back to Top -->
+  <button class="back-to-top-btn" id="backToTopBtn" type="button" aria-label="Back to Top" title="Back to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <polyline points="18 15 12 9 6 15"></polyline>
+    </svg>
+  </button>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"></script>
+
+  <!-- Navbar, CTA, Footer -->
+  <script src="js/navbar.js"></script>
+  <script src="js/components/cta.js"></script>
+  <script src="js/components/footer.js"></script>
+
+  <!-- Blog Data + Detail Engine -->
+  <script src="js/blog-data.js"></script>
+  <script src="js/pages/blog-detail.js"></script>
+
+</body>
+
+</html>
