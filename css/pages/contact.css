@@ -46,7 +46,7 @@
 }
 
 [data-theme="light"] .contact-hero-overlay {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.52) 0%, rgba(250, 248, 243, 0.64) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(250, 248, 243, 0.82) 100%);
 }
 
 .contact-hero-section .container {
@@ -74,6 +74,16 @@
 [data-theme="light"] .contact-hero-title {
   color: #0F172A;
   text-shadow: 0 1px 3px rgba(255, 255, 255, 0.85);
+}
+
+[data-theme="light"] .contact-hero-section .text-accent {
+  color: #624719 !important;
+}
+
+[data-theme="light"] .contact-hero-section .eyebrow-badge {
+  color: #624719;
+  background-color: rgba(255, 255, 255, 0.94);
+  border-color: rgba(98, 71, 25, 0.4);
 }
 
 .contact-hero-desc {
@@ -114,6 +124,35 @@
 
 [data-theme="light"] .trust-item {
   color: #334155;
+}
+
+[data-theme="light"] .contact-hero-section .btn-primary-custom {
+  background-color: #8F6F2E !important;
+  border-color: #8F6F2E !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .contact-hero-section .btn-primary-custom:hover {
+  background-color: #795E25 !important;
+  border-color: #795E25 !important;
+}
+
+[data-theme="light"] .contact-hero-section .btn-secondary-custom {
+  background-color: #FFFFFF !important;
+  border-color: #182437 !important;
+  color: #182437 !important;
+}
+
+[data-theme="light"] .contact-hero-section .btn-secondary-custom:hover {
+  background-color: #182437 !important;
+  border-color: #182437 !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .contact-hero-section .btn-primary-custom:focus-visible,
+[data-theme="light"] .contact-hero-section .btn-secondary-custom:focus-visible {
+  outline: 3px solid #624719;
+  outline-offset: 3px;
 }
 
 .trust-item svg {

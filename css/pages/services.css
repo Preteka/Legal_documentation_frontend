@@ -144,6 +144,10 @@
   color: #3F3C34;
 }
 
+[data-theme="light"] .services-heading-accent {
+  color: #624719;
+}
+
 /* CTA Actions */
 .services-hero-actions {
   margin-bottom: 2.25rem;
@@ -167,6 +171,30 @@
 [data-theme="light"] .services-cta-secondary:hover {
   background-color: rgba(169, 135, 67, 0.1);
   border-color: var(--primary-gold);
+  color: #182437 !important;
+}
+
+[data-theme="light"] .services-hero-section .btn-primary-custom {
+  background-color: #8F6F2E !important;
+  border-color: #8F6F2E !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .services-hero-section .btn-primary-custom:hover {
+  background-color: #795E25 !important;
+  border-color: #795E25 !important;
+}
+
+[data-theme="light"] .services-hero-section .btn-secondary-custom:hover {
+  background-color: #182437 !important;
+  border-color: #182437 !important;
+  color: #FFFFFF !important;
+}
+
+[data-theme="light"] .services-hero-section .btn-primary-custom:focus-visible,
+[data-theme="light"] .services-hero-section .btn-secondary-custom:focus-visible {
+  outline: 3px solid #624719;
+  outline-offset: 3px;
 }
 
 /* Trust Bar */
@@ -185,6 +213,10 @@
   font-size: 0.8125rem;
   font-weight: 600;
   color: var(--text-muted);
+}
+
+[data-theme="light"] .services-hero-trust-bar .trust-bar-item {
+  color: #625E56;
 }
 
 .trust-bar-icon {

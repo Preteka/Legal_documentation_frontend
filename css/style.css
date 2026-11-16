@@ -753,6 +753,11 @@ img, svg {
   box-shadow: none;
 }
 
+.custom-toggler:focus-visible {
+  outline: 2px solid var(--secondary-gold);
+  outline-offset: 3px;
+}
+
 .toggler-bar {
   width: 24px;
   height: 2px;

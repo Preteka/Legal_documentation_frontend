@@ -202,7 +202,7 @@
 }
 
 [data-theme="light"] .about-hero-backdrop-overlay {
-  background: linear-gradient(180deg, rgba(255, 255, 255, 0.44) 0%, rgba(250, 248, 243, 0.54) 100%);
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.76) 0%, rgba(250, 248, 243, 0.82) 100%);
 }
 
 [data-theme="light"] .about-hero-headline {
@@ -211,7 +211,7 @@
 }
 
 [data-theme="light"] .about-hero-headline .text-accent {
-  color: #8F6F2E;
+  color: #624719 !important;
 }
 
 [data-theme="light"] .about-hero-desc {
@@ -221,21 +221,22 @@
 }
 
 [data-theme="light"] .hero-agency-badge {
-  background: rgba(255, 255, 255, 0.88) !important;
-  border-color: rgba(169, 135, 67, 0.45) !important;
-  color: #8F6F2E !important;
+  background: rgba(255, 255, 255, 0.94) !important;
+  border-color: rgba(98, 71, 25, 0.4) !important;
+  color: #624719 !important;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 [data-theme="light"] .about-hero-section .btn-primary-custom {
-  background: linear-gradient(135deg, #A98743 0%, #80612C 100%) !important;
+  background: linear-gradient(135deg, #8F6F2E 0%, #80612C 100%) !important;
   border-color: #80612C !important;
   color: #FFFFFF !important;
   box-shadow: 0 4px 14px rgba(128, 97, 44, 0.28);
 }
 
 [data-theme="light"] .about-hero-section .btn-primary-custom:hover {
-  background: linear-gradient(135deg, #B89348 0%, #8F6D31 100%) !important;
+  background: linear-gradient(135deg, #80612C 0%, #6B4E1B 100%) !important;
+  border-color: #6B4E1B !important;
   color: #FFFFFF !important;
 }
 
@@ -243,7 +244,6 @@
   background: #FFFFFF !important;
   border: 1.5px solid #101827 !important;
   color: #101827 !important;
-  font-weight: 600 !important;
   box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
 }
 
@@ -251,6 +251,12 @@
   background: #101827 !important;
   border-color: #101827 !important;
   color: #FFFFFF !important;
+}
+
+[data-theme="light"] .about-hero-section .btn-primary-custom:focus-visible,
+[data-theme="light"] .about-hero-section .btn-secondary-custom:focus-visible {
+  outline: 3px solid #624719 !important;
+  outline-offset: 3px;
 }
 
 /* --------------------------------------------------------------------------
@@ -1685,34 +1691,6 @@
 
 [data-theme="dark"] .story-feature-desc {
   color: #94A3B8;
-}
-
-/* ── Global & About Light Mode Button Text Visibility ── */
-[data-theme="light"] .about-hero-section .btn-primary-custom {
-  background: linear-gradient(135deg, #A98743 0%, #80612C 100%) !important;
-  border-color: #80612C !important;
-  color: #FFFFFF !important;
-}
-
-[data-theme="light"] .about-hero-section .btn-primary-custom:hover {
-  background: linear-gradient(135deg, #B89348 0%, #8F6D31 100%) !important;
-  color: #FFFFFF !important;
-}
-
-[data-theme="light"] .about-hero-section .btn-secondary-custom {
-  background: rgba(255, 255, 255, 0.09) !important;
-  border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
-  color: #FFFFFF !important;
-}
-
-[data-theme="light"] .about-hero-section .btn-secondary-custom:hover {
-  background: rgba(169, 135, 67, 0.25) !important;
-  border-color: var(--primary-gold, #C5A059) !important;
-  color: #FFFFFF !important;
-}
-
-[data-theme="light"] .about-hero-section .btn-secondary-custom:focus {
-  box-shadow: 0 0 0 3px rgba(255, 255, 255, 0.35) !important;
 }
 
 /* General Light Theme Buttons Across Page */

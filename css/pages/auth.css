@@ -1927,3 +1927,50 @@
   margin-top: 0.5rem;
   padding-top: 0.4rem;
 }
+
+/* --------------------------------------------------------------------------
+   Demo Sign-In Completed: "Sign Out / Reset Demo" button contrast fix
+   Targets #demoLogoutBtn (Bootstrap btn-link text-muted) for visibility
+   in both dark and light themes without altering layout or functionality.
+   -------------------------------------------------------------------------- */
+#demoLogoutBtn {
+  /* Override Bootstrap btn-link and text-muted low-contrast defaults */
+  color: var(--primary-gold, #C5A059) !important;
+  font-weight: 500;
+  text-decoration: none;
+  opacity: 1 !important;
+  transition: color 0.2s ease, opacity 0.2s ease;
+}
+
+#demoLogoutBtn:hover,
+#demoLogoutBtn:focus {
+  color: var(--primary-gold-hover, #D4AF37) !important;
+  text-decoration: underline;
+  opacity: 0.9 !important;
+  outline: none;
+}
+
+#demoLogoutBtn:focus-visible {
+  outline: 2px solid var(--border-focus, #C2A15B);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+#demoLogoutBtn:active {
+  color: #A98340 !important;
+  opacity: 1 !important;
+}
+
+/* Light mode — same gold but slightly darker for warm backgrounds */
+[data-theme="light"] #demoLogoutBtn {
+  color: #8A6728 !important;
+}
+
+[data-theme="light"] #demoLogoutBtn:hover,
+[data-theme="light"] #demoLogoutBtn:focus {
+  color: #6B4F1A !important;
+}
+
+[data-theme="light"] #demoLogoutBtn:active {
+  color: #543D14 !important;
+}

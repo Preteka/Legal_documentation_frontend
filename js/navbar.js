@@ -18,6 +18,67 @@
   // State initialization
   const THEME_KEY = 'legalease_theme';
   const DIR_KEY = 'legalease_direction';
+  const BODY_SCROLL_LOCK_PROPERTIES = [
+    'position',
+    'top',
+    'inset-inline-start',
+    'inset-inline-end',
+    'width',
+    'overflow',
+    'padding-inline-end',
+    '--navbar-scrollbar-width'
+  ];
+  let bodyScrollLockState = null;
+
+  function lockMobileMenuPageScroll() {
+    if (!window.matchMedia('(max-width: 1199.98px)').matches || bodyScrollLockState) return;
+
+    const body = document.body;
+    const scrollY = window.scrollY;
+    const scrollbarWidth = Math.max(0, window.innerWidth - document.documentElement.clientWidth);
+    const currentPadding = parseFloat(window.getComputedStyle(body).paddingInlineEnd) || 0;
+    const inlineStyles = {};
+
+    BODY_SCROLL_LOCK_PROPERTIES.forEach(property => {
+      inlineStyles[property] = {
+        value: body.style.getPropertyValue(property),
+        priority: body.style.getPropertyPriority(property)
+      };
+    });
+
+    bodyScrollLockState = { scrollY, inlineStyles };
+    body.style.setProperty('position', 'fixed');
+    body.style.setProperty('top', `-${scrollY}px`);
+    body.style.setProperty('inset-inline-start', '0');
+    body.style.setProperty('inset-inline-end', '0');
+    body.style.setProperty('width', '100%');
+    body.style.setProperty('overflow', 'hidden');
+    body.style.setProperty('padding-inline-end', `${currentPadding + scrollbarWidth}px`);
+    body.style.setProperty('--navbar-scrollbar-width', `${scrollbarWidth}px`);
+    body.classList.add('navbar-scroll-locked');
+    document.documentElement.classList.add('navbar-scroll-locked');
+  }
+
+  function unlockMobileMenuPageScroll() {
+    if (!bodyScrollLockState) return;
+
+    const body = document.body;
+    const { scrollY, inlineStyles } = bodyScrollLockState;
+    bodyScrollLockState = null;
+    body.classList.remove('navbar-scroll-locked');
+    document.documentElement.classList.remove('navbar-scroll-locked');
+
+    BODY_SCROLL_LOCK_PROPERTIES.forEach(property => {
+      const saved = inlineStyles[property];
+      if (saved.value) {
+        body.style.setProperty(property, saved.value, saved.priority);
+      } else {
+        body.style.removeProperty(property);
+      }
+    });
+
+    window.scrollTo({ top: scrollY, left: window.scrollX, behavior: 'instant' });
+  }
 
   function getStoredTheme() {
     return localStorage.getItem(THEME_KEY) || (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
@@ -361,6 +422,22 @@
     // Auto-close mobile menu on nav link click
     const navLinks = document.querySelectorAll('#navbarContent .nav-link:not(.dropdown-toggle)');
     const navbarCollapse = document.getElementById('navbarContent');
+    if (navbarCollapse) {
+      const syncMobileMenuScrollLock = () => {
+        const menuIsOpen = navbarCollapse.classList.contains('show') || navbarCollapse.classList.contains('collapsing');
+        if (menuIsOpen && window.matchMedia('(max-width: 1199.98px)').matches) {
+          lockMobileMenuPageScroll();
+        } else {
+          unlockMobileMenuPageScroll();
+        }
+      };
+
+      navbarCollapse.addEventListener('show.bs.collapse', lockMobileMenuPageScroll);
+      navbarCollapse.addEventListener('hidden.bs.collapse', unlockMobileMenuPageScroll);
+      window.addEventListener('resize', syncMobileMenuScrollLock);
+      window.addEventListener('pagehide', unlockMobileMenuPageScroll);
+    }
+
     if (navbarCollapse && window.bootstrap) {
       navLinks.forEach(link => {
         link.addEventListener('click', () => {
